@@ -15,10 +15,11 @@ def string_info(string):
 def is_contains(string, list_to_search):
     count_calls()
     for lst in list_to_search:
-        if lst.lower() in string.lower():
-            return True
+        if lst.lower() == string.lower():
+          return True
         else:
-            return False
+          continue
+    return False
 
 
 print(string_info('Capybara'))
